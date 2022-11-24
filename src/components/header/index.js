@@ -5,14 +5,13 @@ const Header = () => {
 
     return (
         <div className="header-main">
-            <div></div>
             <img className="logo-transparent" src={require('../../image/header/Harley-Davidson-Logo-circular-PNG.png')} />
             <div className="nav-bar">
-                <div className="child-button">Road</div>
+                <div className="child-button">Entrar</div>
                 <ul>
                     <li>Motos</li>
                     <li>Peças</li>
-                    <li>Sobrenos</li>
+                    <li>Sobre nós</li>
                     <li>Contato</li>
                 </ul>
             </div>
@@ -21,7 +20,9 @@ const Header = () => {
                 <div className="first-child-text">VISUAL & BELEZA</div>
                 <div className="second-child-text">MOTOCICLETAS</div>
             </div>
-            <a href="#page-1" className="drop-down-button" ><img src={require('../../image/header/down-arrow.png')} /></a>
+            <div className="drop-down">
+                <a href="#page-1" className="drop-down-button" ><img src={require('../../image/header/down-arrow.png')} /></a>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import './style.scss'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 
@@ -18,38 +18,40 @@ const Caroussel = () => {
     }
 
     return (
-        <div>
-            <div className="arrow rigth" onClick={Rigth}>
-                <span class="material-symbols-outlined icon" >
+        <div style={{ overflow: 'hidden' }}>
+            <div className="arrow rigth" >
+                <span class="material-symbols-outlined icon" onClick={Rigth} >
                     chevron_right
                 </span>
             </div>
 
-            <div className="arrow left" onClick={Left}>
-            <span class="material-symbols-outlined icon" >
+            <div className="arrow left" >
+                <span class="material-symbols-outlined icon" onClick={Left}>
                     chevron_left
                 </span>
             </div>
 
             <div className='carrousel-main' id="page-1" >
                 <div style={{ transform: `translateX(${x}%)` }}>
-                    <img src={require('../../image/carousel/caroulseu-img1.png')} />
+                    <img className='galery-motos' src={require('../../image/carousel/caroulseu-img1.png')} />
                     <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
-                    <img src={require('../../image/carousel/caroulseu-img2.png')} />
+                    <img className='galery-motos' src={require('../../image/carousel/caroulseu-img2.png')} />
                     <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
-                    <img src={require('../../image/carousel/caroulseu-img3.png')} />
+                    <img className='galery-motos' src={require('../../image/carousel/caroulseu-img3.png')} />
                     <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
-                    <img src={require('../../image/carousel/caroulseu-img4.png')} />
+                    <img className='galery-motos' src={require('../../image/carousel/caroulseu-img4.png')} />
                     <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
-            </div>
 
+                <div className='background-msg'>Experiência</div>
+
+            </div>
 
         </div>
     )
