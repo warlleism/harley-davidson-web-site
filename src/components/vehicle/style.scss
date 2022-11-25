@@ -62,3 +62,29 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .vehicle-main {
+
+        .titulo {
+            font-size: 2rem;
+        }
+
+        .titulo::after {
+            display: none;
+        }
+
+        .vehicle-component {
+
+            .container-info {
+                width: 380px;
+                padding: 10px;
+
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+}
