@@ -10,14 +10,13 @@
         min-width: 100%;
         animation: galery 30s infinite;
     }
-   
+
 }
 
 @keyframes galery {
     0% {
         transform: translateX(0%);
     }
-
 
     50% {
         transform: translateX(-100%);
@@ -26,7 +25,11 @@
     100% {
         transform: translateX(0%);
     }
+}
 
+@media screen and (max-width: 1000px) {
+    .body-main {
+        height: 100%;
 
-
+    }
 }

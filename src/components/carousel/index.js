@@ -18,7 +18,7 @@ const Caroussel = () => {
     }
 
     return (
-        <div style={{ overflow: 'hidden' }}>
+        <div className='father-container' style={{ overflow: 'hidden' }}>
             <div className="arrow rigth" >
                 <span class="material-symbols-outlined icon" onClick={Rigth} >
                     chevron_right
@@ -34,19 +34,15 @@ const Caroussel = () => {
             <div className='carrousel-main' id="page-1" >
                 <div style={{ transform: `translateX(${x}%)` }}>
                     <img className='galery-motos' src={require('../../image/carousel/caroulseu-img1.png')} />
-                    <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
                     <img className='galery-motos' src={require('../../image/carousel/caroulseu-img2.png')} />
-                    <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
                     <img className='galery-motos' src={require('../../image/carousel/caroulseu-img3.png')} />
-                    <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
                 <div style={{ transform: `translateX(${x}%)` }}>
                     <img className='galery-motos' src={require('../../image/carousel/caroulseu-img4.png')} />
-                    <img className='logo-png' src={require('../../image/carousel/logo.png')} />
                 </div>
 
                 <div className='background-msg'>Experiência</div>
